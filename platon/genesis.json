@@ -1,0 +1,94 @@
+{
+	"config": {
+		"chainId": 101,
+		"eip155Block": 3,
+		"cbft": {
+			"initialNodes": [
+				{
+					"node": "enode://860522dacfba583e1f36bb5da85b37f9f353abceb5db92a51c30ac63ca6f30fdc7fcfc42869e366275eb041e8a9e7f733060da164bb34d326612d82b4d517559@127.0.0.1:18001", 
+					"blsPubKey": "76bcda46e143af5d2d4dd8134f867397bdcf63c4b653ad8b43fcfeeebe0c9a2f32564122f947a2d7c631af45677b14132de87cf6be6cd944955e3cdad9ed96e44f48f400c208d0756826e570769c87f6069f87fdf138157ab7fe40e983c5ca08"
+				  }
+			],
+			"amount": 10,
+			"period": 20000,
+			"validatorMode": "ppos"
+		},
+		"genesisVersion": 65792,
+		"addressHRP": "lat"
+	},
+	"economicModel": {
+		"common": {
+			"maxEpochMinutes": 360,
+			"maxConsensusVals": 43,
+			"additionalCycleTime": 525960
+		},
+		"staking": {
+			"stakeThreshold": 100000000000000000000000,
+			"operatingThreshold": 10000000000000000000,
+			"maxValidators": 201,
+			"unStakeFreezeDuration": 168,
+			"rewardPerMaxChangeRange": 500,
+			"rewardPerChangeInterval": 10
+		},
+		"slashing": {
+			"slashFractionDuplicateSign": 10,
+			"duplicateSignReportReward": 50,
+			"maxEvidenceAge": 27,
+			"slashBlocksReward": 2500,
+			"zeroProduceCumulativeTime": 20,
+			"zeroProduceNumberThreshold": 1,
+			"zeroProduceFreezeDuration": 56
+		},
+		"gov": {
+			"versionProposalVoteDurationSeconds": 1209600,
+            "versionProposalSupportRate": 6670,
+            "textProposalVoteDurationSeconds": 1209600,
+            "textProposalVoteRate": 5000,
+            "textProposalSupportRate": 6670,          
+            "cancelProposalVoteRate": 5000,
+            "cancelProposalSupportRate": 6670,
+            "paramProposalVoteDurationSeconds": 1209600,
+            "paramProposalVoteRate": 5000,
+            "paramProposalSupportRate": 6670 
+		},
+		"reward": {
+			"newBlockRate": 50,
+			"platonFoundationYear": 10,
+			"increaseIssuanceRatio": 250,
+			"theNumberOfDelegationsReward": 20
+		},
+		"restricting": {
+			"minimumRelease": 100000000000000000000
+		},
+		"innerAcc": {
+			"platonFundAccount": "lat1m0s6gmx4ktm89qa39vqg24udu7v0eyq93anyy5",
+			"platonFundBalance": 0,
+			"cdfAccount": "lat1f82spaadg50zgcswqrap5yulcdr9lfdphhl729",
+			"cdfBalance": 322361981000000000000000000
+		}
+	},
+	"nonce": "0x0376e56dffd12ab53bb149bda4e0cbce2b6aabe4cccc0df0b5a39e12977a2fcd23",
+	"timestamp": "0x17538ac5720",
+	"extraData": "0x22cf84e1bf86cf8220e1bc84cebdcf8920e1bd81ceb4cebfe1bfa620e1bc80ceb5e1bdb620e1bc91cebecf8ccebcceb5ceb8ceb120cebaceb1e1bdb620ceb4ceb9cebaceb1ceb9cebfcf83cf8dcebdceb7cebd20cebcceb5cf84e1bdb020cf86cf81cebfcebdceaecf83ceb5cf89cf8220cf80ceb1cebdcf84e1bdb620cf84cf81cf8ccf80e1bfb320e1bc90cf80ceb9cf84ceb7ceb4ceb5cf8dcf83cebfcebcceb5cebd2e220a225765207368616c6c20616c77617973206b65657020746f2074686520757070657220726f616420616e64207072616374696365206a75737469636520776974682070727564656e636520696e206576657279207761792e220a22e8aea9e68891e4bbace6b0b8e8bf9ce59d9ae68c81e8b5b0e59091e4b88ae79a84e8b7afefbc8ce585a8e58a9be4bba5e5aea1e6858ee8b7b5e8a18ce6ada3e4b989e3808222",
+	"gasLimit": "201600000",
+	"alloc": {
+		"lat1wrfq0sfj9n9eq6wn0yxkw6yxdk4l7yp4hpmt8p": {
+			"balance": "2000000000000000000000000000000000000"
+		  },
+		  "lat1xsuh90mr6yrzwcd242y36f6s7q7tfvhh5844xy": {
+			"balance": "2000000000000000000000000000000000000"
+		  },
+		  "lat1j74n6nml2pglzfasa8udzpmjzfwef4jm7y5c5a": {
+			"balance": "2000000000000000000000000000000000000"
+		  },
+		  "lat15apf4czd3wufel2h9936m65vh7ppjcy6tcts33": {
+			"balance": "2000000000000000000000000000000000000"
+		  },
+		  "lat165pu38wg9cx5x6ygvr5mmul08mlq0khzeamh5v": {
+			"balance": "2000000000000000000000000000000000000"
+		  }
+	},
+	"number": "0x0",
+	"gasUsed": "0x0",
+	"parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+}

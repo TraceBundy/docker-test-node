@@ -1,0 +1,40 @@
+version: '3.7'
+
+services:
+  platon-bootnode:
+    hostname: platon-bootnode
+    image: registry.cn-hangzhou.aliyuncs.com/pressure/docker:platon-single-exe
+    build:
+      context: .
+    command:
+      --identity platon
+      --datadir /tmp/data
+      --nodekey /tmp/data/nodekey
+      --cbft.blskey /tmp/data/blskey
+      --port 18001
+      --debug --verbosity 4
+      --pprof
+      --pprofaddr 0.0.0.0
+      --pprofport 7001
+      --wsorigins "*"
+      --ws
+      --wsaddr 0.0.0.0
+      --wsport 6601
+      --wsapi platon,debug,personal,admin,net,web3,txpool
+      --rpc
+      --rpcaddr 0.0.0.0
+      --rpcport 8801
+      --rpcapi platon,debug,personal,admin,net,web3,txpool
+      --cache 256
+      --metrics
+      --ipcdisable
+      --txpool.nolocals
+      --maxpeers 100
+      --maxconsensuspeers 75
+      --txpool.globaltxcount 1000
+      --nodiscover
+      --vm.wasm_type "wagon"
+      --networkid 102
+      --allow-insecure-unlock
+    ports:
+      - "8801:8801"
