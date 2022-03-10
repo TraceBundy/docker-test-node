@@ -1,0 +1,28 @@
+version: '3.7'
+
+services:
+  geth-bootnode-easy:
+    hostname: geth-bootnode-easy
+    env_file:
+      - .env
+    image: geth-client-easy
+    build:
+      context: .
+      args:
+        - ACCOUNT_PASSWORD=${ACCOUNT_PASSWORD}
+    command:
+      --nodekeyhex="b0ac22adcad37213c7c565810a50f1772291e7b0ce53fb73e7ec2a3c75bc13b5"
+      --nodiscover
+      --mine
+      --miner.etherbase="0x97ab3d4f7f5051f127b0e9f8d10772125d94d65b"
+      --miner.threads=1
+      --allow-insecure-unlock
+      --http
+      --http.addr="0.0.0.0"
+      --http.api="eth,web3,net,admin,personal"
+      --http.corsdomain="*"
+      --ipcdisable
+      --networkid=${NETWORK_ID}
+      --netrestrict="172.16.254.0/28"
+    ports:
+      - "8545:8545"

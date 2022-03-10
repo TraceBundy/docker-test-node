@@ -1,0 +1,36 @@
+{
+  "difficulty": "0",
+  "gasLimit": "12000000",
+  "alloc": {
+   "0x70d207c1322ccb9069d3790d6768866dabff1035": {
+      "balance": "2000000000000000000000000000000000000"
+    },
+    "0x343972bf63d1062761aaaa891d2750f03cb4b2f7": {
+      "balance": "2000000000000000000000000000000000000"
+    },
+    "0x97ab3d4f7f5051f127b0e9f8d10772125d94d65b": {
+      "balance": "2000000000000000000000000000000000000"
+    },
+    "0xa7429ae04d8bb89cfd572963adea8cbf8219609a": {
+      "balance": "2000000000000000000000000000000000000"
+    },
+    "0xd503c89dc82e0d43688860e9bdf3ef3efe07dae2": {
+      "balance": "2000000000000000000000000000000000000"
+    }
+  },
+  "config": {
+    "chainId": 100,
+    "homesteadBlock": 0,
+    "eip150Block": 0,
+    "eip155Block": 0,
+    "eip158Block": 0,
+    "byzantiumBlock": 0,
+    "constantinopleBlock": 0,
+    "petersburgBlock": 0,
+    "istanbulBlock": 0,
+    "berlinBlock": 0,
+    "londonBlock": 0,
+    "arrowGlacierBlock":0,
+    "ethash": {}
+  }
+}
