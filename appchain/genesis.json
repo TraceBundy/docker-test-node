@@ -1,0 +1,379 @@
+{
+	"config": {
+		"chainId": 101,
+		"eip155Block": 3,
+		"cbft": {
+			"initialNodes": [
+				{
+					"node": "enode://860522dacfba583e1f36bb5da85b37f9f353abceb5db92a51c30ac63ca6f30fdc7fcfc42869e366275eb041e8a9e7f733060da164bb34d326612d82b4d517559@127.0.0.1:18001", 
+					"blsPubKey": "76bcda46e143af5d2d4dd8134f867397bdcf63c4b653ad8b43fcfeeebe0c9a2f32564122f947a2d7c631af45677b14132de87cf6be6cd944955e3cdad9ed96e44f48f400c208d0756826e570769c87f6069f87fdf138157ab7fe40e983c5ca08"
+				  }
+			],
+			"amount": 10,
+			"period": 20000,
+			"validatorMode": "ppos"
+		},
+		"genesisVersion": 65792,
+		"addressHRP": "lat"
+	},
+	"economicModel": {
+		"common": {
+			"maxEpochMinutes": 360,
+			"maxConsensusVals": 43,
+			"additionalCycleTime": 525960
+		},
+		"staking": {
+			"stakeThreshold": 100000000000000000000000,
+			"operatingThreshold": 10000000000000000000,
+			"maxValidators": 201,
+			"unStakeFreezeDuration": 168,
+			"rewardPerMaxChangeRange": 500,
+			"rewardPerChangeInterval": 10
+		},
+		"slashing": {
+			"slashFractionDuplicateSign": 10,
+			"duplicateSignReportReward": 50,
+			"maxEvidenceAge": 27,
+			"slashBlocksReward": 2500,
+			"zeroProduceCumulativeTime": 20,
+			"zeroProduceNumberThreshold": 1,
+			"zeroProduceFreezeDuration": 56
+		},
+		"gov": {
+			"versionProposalVoteDurationSeconds": 1209600,
+            "versionProposalSupportRate": 6670,
+            "textProposalVoteDurationSeconds": 1209600,
+            "textProposalVoteRate": 5000,
+            "textProposalSupportRate": 6670,          
+            "cancelProposalVoteRate": 5000,
+            "cancelProposalSupportRate": 6670,
+            "paramProposalVoteDurationSeconds": 1209600,
+            "paramProposalVoteRate": 5000,
+            "paramProposalSupportRate": 6670 
+		},
+		"reward": {
+			"newBlockRate": 50,
+			"platonFoundationYear": 10,
+			"increaseIssuanceRatio": 250,
+			"theNumberOfDelegationsReward": 20
+		},
+		"restricting": {
+			"minimumRelease": 100000000000000000000
+		},
+		"innerAcc": {
+			"platonFundAccount": "lat1m0s6gmx4ktm89qa39vqg24udu7v0eyq93anyy5",
+			"platonFundBalance": 0,
+			"cdfAccount": "lat1f82spaadg50zgcswqrap5yulcdr9lfdphhl729",
+			"cdfBalance": 322361981000000000000000000
+		}
+	},
+	"nonce": "0x0376e56dffd12ab53bb149bda4e0cbce2b6aabe4cccc0df0b5a39e12977a2fcd23",
+	"timestamp": "0x17538ac5720",
+	"extraData": "0x22cf84e1bf86cf8220e1bc84cebdcf8920e1bd81ceb4cebfe1bfa620e1bc80ceb5e1bdb620e1bc91cebecf8ccebcceb5ceb8ceb120cebaceb1e1bdb620ceb4ceb9cebaceb1ceb9cebfcf83cf8dcebdceb7cebd20cebcceb5cf84e1bdb020cf86cf81cebfcebdceaecf83ceb5cf89cf8220cf80ceb1cebdcf84e1bdb620cf84cf81cf8ccf80e1bfb320e1bc90cf80ceb9cf84ceb7ceb4ceb5cf8dcf83cebfcebcceb5cebd2e220a225765207368616c6c20616c77617973206b65657020746f2074686520757070657220726f616420616e64207072616374696365206a75737469636520776974682070727564656e636520696e206576657279207761792e220a22e8aea9e68891e4bbace6b0b8e8bf9ce59d9ae68c81e8b5b0e59091e4b88ae79a84e8b7afefbc8ce585a8e58a9be4bba5e5aea1e6858ee8b7b5e8a18ce6ada3e4b989e3808222",
+	"gasLimit": "201600000",
+"alloc": {
+   "lat104kk376230gzysrz9f8vdw3ctjgg0y0p3styv4": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat10flhlwy4d9s4av5nwaacx8hzjvk7hceeetr3rz": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat10u7grcr37drhrssn984ruw4v9ke70wg37u9744": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat125j0l778tgrrdj4jp6qjnmqn7gdn9dsmd9ytjl": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1260dpfrcnlkjlq0d0kneu9dzuyq2405av6hss4": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat127g04cxhds8s4ywuruaq6p6udkj0xh0tx8t74v": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat139aep5fglnx3h7zrsc4lj83nej44aurplt3krr": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat13aym6ys3epze0u6vtxtvfwu6jzapqs6gsfhen8": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat13yn9l64rrs9ydy22794ue3skl6xgnm55e4xkqf": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat147u7yqupl8q794u575twj3ea4evxdkntqw4ur2": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat14d8xqtallynm3h290esxucwyamd0s6n9950hme": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat14euk5n97ql59kf2rqu7z2a9dlunpfmms5drkct": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat14p60sppufta5afpf43p6gn3layr9qjc07pk06z": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat14y9c7htetp8uxvdq8ejgvreaj8cz350aufx6fw": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat159uchafdl2cgsel8wyn9kjctg4pxczktxerxev": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat15apf4czd3wufel2h9936m65vh7ppjcy6tcts33": {
+    "balance": "0x1812f9cf7920e2b66973e2000000000"
+   },
+   "lat15dryj5zzyz9g8yxl7f43u39afkxc4m3ulw8uwj": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat15vmf674dulefh8rsyjhm8wh9w59e55prfl2hdh": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat15wpdwvr3g0c6u4maaumfgfuj6dkaznvj0nsvgg": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat165pu38wg9cx5x6ygvr5mmul08mlq0khzeamh5v": {
+    "balance": "0x1812f9cf7920e2b66973e2000000000"
+   },
+   "lat17lkn2m5lfs8235efz682cvlhujy0s679qtjarf": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat17u53jnns977acj86jlcz86vzrgygnylhkwmpa7": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat17ud0l28cnl02angly6ncvw7rt60yq7lc2jufat": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat18hmuqnav6797drh8dkyyq8pheuuwanl5sepyzt": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat18j6sr3y7pfnz9jv3awxd7klzhze3ym3z6d554a": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat18nqy55w98lucpah9nj9ttrw2qrg4l3shav88px": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat199d3me7vn0rjcpcd5qu5ef24uegxj6zgv7l5ww": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat19jmyp3l4cspd5rz0njq0lzj6ps8u3vsgny97h3": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat19wks0gqxlfrf55nxet3276578vytvm32pe8hph": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat19y6wung4tssusx25ql6jp7mwe6lrz402gs4f7n": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1aey4j4udxzlqmlklmk52txlzj8gsqna6dnkttp": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1aw72w7lwuevc5l8nl9kuxjyvzxwvfd6a0gmtvf": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1axqalglxw5lrmkuunc4hx6al6p3w9gvhgktrfy": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1cgxy5d3m3dvs8gr3c520h0mph4w50qvwu7k446": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1cyt3s4n4rsvr0xws8a9rscuqdq37w0p3u8sur7": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1d8u8gn3rlu429fsrxe8pnt23hr6gqw4jlqyedg": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1dxn692hldjavxjak8c60xvlsze4kftm0uq5sgr": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1dy95w2qw2hswl67eyegq9q67d3anlzcfdr87mx": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1e3vgzm4d893ztnruaevam6nvmwdvdqg7yyl09e": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1edu253v7aqszcnhldskqx7sl6r98s46n5fp386": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1emwm5m6ms4ykqn2tmuqg0h0vkqzm54jkxsfjz6": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1f8rz3eqqg24ju8rzwq5gh6vhe5nyjmr3702c9m": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1fcmvaz7hw9r5vedkx9r6mrlq0efy9t4wpqsejn": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1ffenrhvhdg2ucmds7ak5dgs0gefg04ggtg8gqt": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1fx3ssngv4uzahqz6ehsszh5h0k3khlt30eze0t": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1g4454kwgyvhvp5p5al6py72m6f6r3h28faruzn": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1gvedy3h26zq6a6ddjf2z99cdjyzppwtnj4kpkg": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1hwvjht8akrm4svg628esa6gthnttge9cwgshp5": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1j74n6nml2pglzfasa8udzpmjzfwef4jm7y5c5a": {
+    "balance": "0x1812f9cf7920e2b66973e2000000000"
+   },
+   "lat1jpklm0ndy0pw76vhkg9uqnn5kcl0s9398rsfp4": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1jvf6fwpandq32q4fxehmjassfalf9q56z0afep": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1jy0z7fa5e7vklkf2ack0vu9w8w82nz3mfvwwjw": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1kjjzd08c3r6r8wmylmjvgpalrmll2u25nqa8cx": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1km9qarm5lzschgy8d6sgked0ncqd69uqtmwra4": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1knnw38jppnnfd7j9xq5pehcwrlc233xy5ve72z": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1l2cutvnxgc66enx8wh4m7cyx3vldaq0l3ycplr": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1lvn0s3s8myvseps2y0kw2wjk90w56r0x49qp0m": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1lz0jl9ju50kdzjavk7ync8nfjkpwn6ear5u0yk": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1m005d95rt5vku20temm8jc9lecgklnzdfjsy4a": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1mj4gr7chz7mwmhxjg4ya2n40zu3fplrn5uuzxz": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1mqqw0rskf37sxgmshrgetw6u0w0hkrzgpszq49": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1mt9etgqx97eeqmwsxcxjplefgd6q3rdcku9z2r": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1n3r9a4xssnl6u0zt600angxzwd68r4dfwpz7zf": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1np72eguy9cwpxez3wgmnh7776fdx7k0jea2p2n": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1p20tg2t5rlcktxtvlmpk52keg4krz8a6seca73": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1pkwtkuatqtmkq7vhxagkcfu5c2fgra5gt6ygmm": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1pssshh2fhugjuc04a2sgx24d5wlf9xd320ww0j": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1pwzegtjaz9gez5fystexlk85006stfslwz4yn2": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1q6f43n5z709qnch8krf47rjsmtxxgurc7zw2vc": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1qecv8hfpskx754gxen2uxjr5a20cpnedg32yuk": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1qx02jh26tr0z2hdqcucxqkclqw3t72yxcpdakw": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1r064f3xta590j4psk92rd5adxcn04hgju6kmrd": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1rdfvv2sacuda46hrwvd8flzfhqx773zaw59snk": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1rdlz3fedl4al0wwtv8yscph5jk6j5rykggehsr": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1rl6fm0qc9rlqyu2atfdzuq74cv3xrl564e3pyx": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1rrvqlzurqtv0csw5ywwsdvvtduspvs9g7w3jw4": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1rvy0ru9msj36e59crc39a5hgu4m2z36q4njh3m": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1s7dsx2s0j9w0pwd3m5r49pppcqwyszzvx8xe4c": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1sa3988dazrmnu0tqezjmdypz5m795y4x92wdw9": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1t9xn2zjdxjm3rcvsmaxku5mtvz7xtzg3uwzueu": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1tdc6pakdszmuvp5ytesjrt8yhax35htrx42w4e": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1tdxstlqmfj3dgkj7gfszj0wuv0qtgrnyg86hef": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1tfkew8dkvk5vgn2ua88cz4gnmz7ljdm65rv70e": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1uu3tcrkaqpvmg48j5q0dmtzse4ct6naqz4nwa6": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1vguwrqy8caw8phn47unlqlgr8pj5p9ajkcutnq": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1vtpmm3cvlkf5g7ejrdunzqdx6eyq9ak3h9l3nm": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1w8cj69gjfulcv2un2nzt2xauysps7dzhtg8ja2": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1wfmkquns8tfjk2dr23sx8jqpkwhh528fjm5ksy": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1wrfq0sfj9n9eq6wn0yxkw6yxdk4l7yp4hpmt8p": {
+    "balance": "0x1812f9cf7920e2b66973e2000000000"
+   },
+   "lat1x0pg26nmjrawpdqhg52w0wawez4jcfrx9zeplu": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1xf6sft43cf53a6t7355fsz6k8z0ysacs7wl368": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1xrmsqwt49aug6wa0h39sjlp9tlc42h33xrspwu": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1xsuh90mr6yrzwcd242y36f6s7q7tfvhh5844xy": {
+    "balance": "0x1812f9cf7920e2b66973e2000000000"
+   },
+   "lat1yjw572sjgrkxjhms432tvywpymkvkpamyhg4ra": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1yk5q9a7akpqjvwx5mqrdlnncvh3t0wapkqfaa4": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1ym37uzww0jzpy9tlwrjatestdcl22az8tzmvfa": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1z4y7xue0gjgtvnn2kmenwl03tjcckj2vfyxk95": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1z7y3j6wz7ellkeua5ksh5nevds255uh5dy0vh9": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1zhnma5tdy2peq8rtju2ytfszpnacn5wmmpk3yr": {
+    "balance": "0x2000000000000000000000000000000000000"
+   },
+   "lat1zpu0vtw4agkzjxf8pg66575jcual9dytjyy9mj": {
+    "balance": "0x2000000000000000000000000000000000000"
+   }
+  },	
+	"number": "0x0",
+	"gasUsed": "0x0",
+	"parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+}
